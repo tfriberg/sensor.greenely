@@ -57,7 +57,7 @@ key | type | description
 **platform (Required)** | string | `greenely`
 **email (Required)** | string | Your Greenely username.
 **password (Required)** | string | Your Greenely password.
-**facility_id (Optional)** | string | If you have more than one facility and know the facility ID you want data from, put it here. Default `primary`.
+**facility_id (Optional)** | string | If you have more than one facility and know the facility ID you want data from, put it here. Default `primary`. <br>Note: The facility id's can be found eg. by installing Android Studio and in a Play Store enabled device emulator (indicated by the Play Icon) install the Greenely app. Run app, login with your Greenely credentials, and use Logcat in Android Studio, filtered on Greenely to find the facility ID. In the app, switch between the registered facilities to find out the different facility IDs.
 **daily_usage (Optional)** | boolean | Creates a sensor showing daily usage data. The state of this sensor is yesterday's total usage. Default `true`.
 **hourly_usage (Optional)** | boolean | Creates a sensor showing yesterday's hourly usage data. Default `false`.
 **sold (Optional)** | boolean | Creates a sensor showing sold electricity data. The state of this sensor is the total value. Default `false`.
